@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Ramadhani Fitriana</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      transition: all 0.3s ease;
+    }
+    body {
+      background-color: #f0f4f8;
+      color: #222;
+    }
+    header {
+      background: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #0e6ba8;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0e6ba8;
+      font-weight: 500;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #eaf6ff;
+      border-radius: 15px;
+      gap: 40px;
+      text-align: center;
+    }
+    .home-text {
+      max-width: 500px;
+    }
+    .home-text h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .fotoprofil {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+    .fotoprofil:hover {
+      transform: scale(1.05);
+    }
+
+    /* About Layout */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+    .fotoabout {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+    .fotoabout:hover {
+      transform: scale(1.05);
+    }
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .project-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .project-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex: 1 1 45%;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .school ul {
+      padding-left: 20px;
+    }
+
+    .skill-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .skill-box {
+      flex: 1 1 45%;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .skill-box:hover h3 {
+      transform: translateY(-5px);
+    }
+
+    .contact {
+      background: #d1f3ef;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .contact:hover {
+  transform: scale(1.05);
+    }
+
+    .contact a {
+      display: block;
+      color: #0e6ba8;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h2, h3 {
+      color: #0e6ba8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Ramadhani</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#school">School</a></li>
+        <li><a href="#skill">Skill</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="home-text">
+      <h1>Portofolio<br>Ramadhani Fitriana</h1>
+    </div>
+    <img src="fotoprofil.jpg" alt="Foto Profil" class="fotoprofil">
+  </section>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <div class="about-container">
+      <img src="fotoabout.jpg" alt="Foto About" class="fotoabout">
+      <div class="about-text">
+        <p>Halo, Saya Fitri, Mahasiswa aktif di Universitas Negeri Surabaya, Jurusan Pendidikan Teknologi Informasi. Saya memiliki minat besar di bidang desain UI/UX, dimana saya bisa merancang tampilan dan interaksi yang user-friendly, serta pad web & mobile app developer, karena saya percaya teknologi ini punya potensi besar untuk memecahkan masalah sehari-hari.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="project">
+    <h2>Project</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Ghost Word Game</h3>
+        <p>Game \"Ghost Word Game\" dari huruf dengan AI agar terbentuk jadi kata.</p>
+      </div>
+      <div class="project-card">
+        <h3>Panduan Puspa</h3>
+        <p>Project kelompok bersama teman sekelas, mobile app \"Panduan Puspa\".</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="school" class="school">
+    <h2>Latar Belakang Pendidikan</h2>
+    <ul>
+      <li>SMK Dharma Bahari Surabaya (2020–2023) – Teknik Komputer dan Jaringan</li>
+      <li>Universitas Negeri Surabaya (2023–Sekarang) – Pendidikan Teknologi Informasi</li>
+    </ul>
+  </section>
+
+  <section id="skill">
+    <h2>Skill</h2>
+    <div class="skill-container">
+      <div class="skill-box">
+        <h3>Programming:</h3>
+        <p>HTML, CSS, JavaScript, Python</p>
+      </div>
+      <div class="skill-box">
+        <h3>Desain Tools:</h3>
+        <p>Figma, Canva</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Hubungi saya:</h2>
+    <a href="mailto:ramadhani.23034@mhs.unesa.ac.id">✉️ ramadhani.23034@mhs.unesa.ac.id</a>
+    <a href="https://wa.me/6281216563154">📱 +62-812-1656-3154</a>
+    <a href="https://instagram.com/opet_bca" target="_blank">📸 @Opet_bca</a>
+  </section>
+
+</body>
+</html>
